@@ -1,2 +1,6 @@
 *.iml
 .idea/
+.idea_modules
+play/logs
+play/target
+play/project/target
