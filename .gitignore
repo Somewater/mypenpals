@@ -15,3 +15,10 @@ play/project/target
 /client/npm-debug.log*
 /client/yarn-debug.log*
 /client/yarn-error.log*
+
+cpp_server/CMakeCache.txt
+cpp_server/Makefile
+cpp_server/CMakeFiles/
+cpp_server/chat
+cpp_server/cmake-build-debug/
+cpp_server/cmake_install.cmake
