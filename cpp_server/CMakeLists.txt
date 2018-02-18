@@ -5,6 +5,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 option(BUILD_SHARED_LIBS "Build shared libraries." ON)
 
+if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+    set(OPENSSL_ROOT_DIR /usr/local/Cellar/openssl/1.0.2n)
+    set(OPENSSL_INCLUDE_DIR /usr/local/Cellar/openssl/1.0.2n/include)
+endif()
+
 find_package(OpenSSL REQUIRED)
 find_package(ZLIB REQUIRED)
 
